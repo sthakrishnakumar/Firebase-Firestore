@@ -5,10 +5,14 @@ export 'package:dartz/dartz.dart';
 export 'package:dio/dio.dart';
 export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:firebase_core/firebase_core.dart';
+export 'package:intl/intl.dart';
+export 'package:cloud_firestore/cloud_firestore.dart';
+
 
 //models
 export '../features/users/data/models/get_user_request_model.dart';
 export '../features/users/data/models/get_user_request_model.dart';
+export '../features/book_date/book_date_model.dart';
 
 //data sources
 export '../features/users/data/data_source/user_data_source.dart';
