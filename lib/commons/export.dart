@@ -11,10 +11,10 @@ export '../features/users/data/models/get_user_request_model.dart';
 export '../features/users/data/models/get_user_request_model.dart';
 
 //data sources
-export '../features/users/data/data_source/get_user_data_source.dart';
+export '../features/users/data/data_source/user_data_source.dart';
 
 //repositories
-export '../features/users/repository/get_user_repository.dart';
+export '../features/users/repository/user_repository.dart';
 
 //controllers
 export '../features/users/presentation/controller/get_user_controller.dart';

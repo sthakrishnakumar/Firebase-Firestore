@@ -1,11 +1,10 @@
-
 import '../../../../commons/export.dart';
 
 class GetUserNotifier extends StateNotifier<AsyncValue<List<GetUsersModel>>> {
   GetUserNotifier(this.getUserRepository) : super(const AsyncValue.loading()) {
     getUsers();
   }
-  GetUserRepository getUserRepository;
+  UserRepository getUserRepository;
   getUsers() async {
     final result = await getUserRepository.getUsers();
 
@@ -19,5 +18,5 @@ class GetUserNotifier extends StateNotifier<AsyncValue<List<GetUsersModel>>> {
 final getUserNotifierProvider =
     StateNotifierProvider<GetUserNotifier, AsyncValue<List<GetUsersModel>>>(
         (ref) {
-  return GetUserNotifier(ref.watch(getUserRepoProvider));
+  return GetUserNotifier(ref.watch(userRepoProvider));
 });
