@@ -8,7 +8,6 @@ export 'package:firebase_core/firebase_core.dart';
 export 'package:intl/intl.dart';
 export 'package:cloud_firestore/cloud_firestore.dart';
 
-
 //models
 export '../features/users/data/models/get_user_request_model.dart';
 export '../features/users/data/models/get_user_request_model.dart';
@@ -27,6 +26,7 @@ export '../features/users/presentation/controller/get_user_controller.dart';
 export '../features/users/presentation/screens/get_users_page.dart';
 export '../features/users/presentation/screens/post_user_page.dart';
 export '../features/book_date/book_date_page.dart';
+export '../features/book_date/get_booked_dates.dart';
 
 //others
 export '../core/api_client.dart';

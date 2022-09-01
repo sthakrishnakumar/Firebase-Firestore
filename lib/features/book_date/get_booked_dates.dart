@@ -19,17 +19,22 @@ class GetDates extends StatelessWidget {
         stream: getDates(),
         builder: ((context, snapshot) {
           if (snapshot.hasError) {
-            return const Center(
-              child: Text('Something went wrong'),
+            
+            return Center(
+              child: Text('Something went wrong ${snapshot.error}'),
             );
           } else if (snapshot.hasData) {
             return ListView(
               children: [
-                ...snapshot.data!.map((e) => Text(e.bookedDate.toString()))
+                ...snapshot.data!.map(
+                  (e) => Text(e.bookedDate),
+                )
               ],
             );
           } else {
-            return const CircularProgressIndicator();
+            return const Center(
+              child: CircularProgressIndicator(),
+            );
           }
           // if (snapshot.hasData) {
           //   final dates = snapshot.data;

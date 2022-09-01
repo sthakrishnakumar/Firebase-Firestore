@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:onviro/features/book_date/get_booked_dates.dart';
 
 import '../commons/export.dart';
 
@@ -40,6 +39,9 @@ class HomePage extends StatelessWidget {
                 const BookDatePage(),
               ),
               child: const Text('Book Date'),
+            ),
+            const SizedBox(
+              height: 10,
             ),
             ElevatedButton(
               onPressed: () => navigation(context, const GetDates()),

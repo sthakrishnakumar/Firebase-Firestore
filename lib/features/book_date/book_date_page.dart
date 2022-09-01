@@ -50,6 +50,7 @@ class _BookDatePageState extends ConsumerState<BookDatePage> {
                     child: child!,
                   );
                 },
+                
               );
 
               setState(() {
@@ -58,6 +59,9 @@ class _BookDatePageState extends ConsumerState<BookDatePage> {
               });
             },
             child: TextField(
+              decoration: const InputDecoration(
+                hintText: '   Select a Date for Booking',
+              ),
               enabled: false,
               controller: dateController,
               onChanged: (date) {},
@@ -76,7 +80,7 @@ class _BookDatePageState extends ConsumerState<BookDatePage> {
                       setState(() {
                         isLoading = true;
                       });
-                      final date = BookDate(bookedDate: selected!);
+                      final date = BookDate(bookedDate: dateController.text);
                       await bookDate(date: date);
                       Timer(const Duration(seconds: 2), () {
                         setState(() {
