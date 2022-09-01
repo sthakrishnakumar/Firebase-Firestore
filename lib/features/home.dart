@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:onviro/commons/commons.dart';
-import 'package:onviro/features/users/presentation/screens/get_users_page.dart';
-import 'package:onviro/features/users/presentation/screens/post_user_page.dart';
+
+import '../commons/export.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -10,6 +9,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Page'),
+        centerTitle: true,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 120),
@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
             ElevatedButton(
               onPressed: () => navigation(
                 context,
-                const GetUsersPage(),
+                const BookDatePage(),
               ),
               child: const Text('Book Date'),
             ),

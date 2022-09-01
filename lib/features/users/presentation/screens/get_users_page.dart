@@ -14,6 +14,10 @@ class _GetUsersPageState extends ConsumerState<GetUsersPage> {
   Widget build(BuildContext context) {
     final getUsers = ref.watch(getUserNotifierProvider);
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Users Page'),
+        centerTitle: true,
+      ),
       body: AsyncValueWidget<List<GetUsersModel>>(
         value: getUsers,
         data: (d) => Column(
