@@ -17,8 +17,8 @@ class GetUsersModel {
     return GetUsersModel(
       id: json['id'] ?? 0,
       email: json['email'] ?? '',
-      firstName: json['firstName'] ?? '',
-      lastName: json['lastName'] ?? '',
+      firstName: json['first_name'] ?? 'no name',
+      lastName: json['last_name'] ?? 'no last name',
       avatar: json['avatar'] ?? '',
     );
   }

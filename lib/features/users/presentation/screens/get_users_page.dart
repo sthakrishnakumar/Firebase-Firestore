@@ -1,6 +1,6 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:onviro/features/users/presentation/controller/get_user_controller.dart';
+import '../../../../commons/export.dart';
 
 class GetUsersPage extends ConsumerStatefulWidget {
   const GetUsersPage({Key? key}) : super(key: key);
@@ -14,10 +14,24 @@ class _GetUsersPageState extends ConsumerState<GetUsersPage> {
   Widget build(BuildContext context) {
     final getUsers = ref.watch(getUserNotifierProvider);
     return Scaffold(
-      body: Column(
-        children: [
-          ListTile(),
-        ],
+      body: AsyncValueWidget<List<GetUsersModel>>(
+        value: getUsers,
+        data: (d) => Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ...d.map(
+              (e) => Card(
+                child: ListTile(
+                  title: Text('${e.firstName} ${e.lastName}'),
+                  subtitle: Text(e.email),
+                  leading: CircleAvatar(
+                    backgroundImage: CachedNetworkImageProvider(e.avatar),
+                  ),
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

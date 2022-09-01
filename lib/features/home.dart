@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:onviro/commons/commons.dart';
+import 'package:onviro/features/users/presentation/screens/get_users_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,7 +16,10 @@ class HomePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () => navigation(
+                context,
+                const GetUsersPage(),
+              ),
               child: const Text('Get Users'),
             ),
             const SizedBox(
