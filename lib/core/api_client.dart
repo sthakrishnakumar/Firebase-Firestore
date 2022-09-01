@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:onviro/core/api_constant.dart';
 
 class ApiClient {
@@ -20,3 +21,7 @@ class ApiClient {
     }
   }
 }
+
+final apiClientProvider = Provider<ApiClient>((ref) {
+  return ApiClient();
+});
