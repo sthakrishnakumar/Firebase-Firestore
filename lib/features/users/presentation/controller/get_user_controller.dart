@@ -1,6 +1,5 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:onviro/features/users/data/models/get_user_request_model.dart';
-import 'package:onviro/features/users/repository/get_user_repository.dart';
+
+import '../../../../commons/export.dart';
 
 class GetUserNotifier extends StateNotifier<AsyncValue<List<GetUsersModel>>> {
   GetUserNotifier(this.getUserRepository) : super(const AsyncValue.loading()) {

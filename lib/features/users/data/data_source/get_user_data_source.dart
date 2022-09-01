@@ -1,8 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:onviro/core/api_client.dart';
-import 'package:onviro/core/api_constant.dart';
-import 'package:onviro/features/users/data/models/get_user_request_model.dart';
+import '../../../../commons/export.dart';
 
 abstract class GetUserDataSource {
   Future<List<GetUsersModel>> getUsers();
