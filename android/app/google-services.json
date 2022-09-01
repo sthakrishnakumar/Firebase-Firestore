@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "710227918992",
+    "project_id": "onviro-date-booking",
+    "storage_bucket": "onviro-date-booking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:710227918992:android:cda3de260ca1efe4175815",
+        "android_client_info": {
+          "package_name": "com.example.onviro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "710227918992-iv4psic557urqmduaav21jiqvbk1pmvn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAks0dIW9sYRzH0StMyh6wGw961mGKLHF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "710227918992-iv4psic557urqmduaav21jiqvbk1pmvn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,6 +4,7 @@ export 'package:flutter_riverpod/flutter_riverpod.dart';
 export 'package:dartz/dartz.dart';
 export 'package:dio/dio.dart';
 export 'package:flutter_riverpod/flutter_riverpod.dart';
+export 'package:firebase_core/firebase_core.dart';
 
 //models
 export '../features/users/data/models/get_user_request_model.dart';

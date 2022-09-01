@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'commons/export.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(
     const ProviderScope(
       child: MyApp(),
