@@ -8,6 +8,13 @@ void navigation(BuildContext context, Widget widget) {
   );
 }
 
+void pushReplacement(BuildContext context, Widget widget) {
+  Navigator.pushReplacement(
+    context,
+    CupertinoPageRoute(builder: (context) => widget),
+  );
+}
+
 void scaffold(BuildContext context, String content, Color color) {
   ScaffoldMessenger.of(context).showSnackBar(
     SnackBar(

@@ -27,7 +27,10 @@ class HomePage extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () => navigation(context, const PostUserPage()),
+              onPressed: () => navigation(
+                context,
+                const PostUserPage(),
+              ),
               child: const Text('Post User'),
             ),
             const SizedBox(
@@ -44,8 +47,21 @@ class HomePage extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () => navigation(context, const AppointmentPage()),
-              child: const Text('Get Appointment'),
+              onPressed: () => navigation(
+                context,
+                const GetDates(),
+              ),
+              child: const Text('Get Date'),
+            ),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+              onPressed: () => navigation(
+                context,
+                const AppointmentPage(),
+              ),
+              child: const Text(' Appointment'),
             ),
             const SizedBox(
               height: 10,
