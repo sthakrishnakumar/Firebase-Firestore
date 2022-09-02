@@ -9,12 +9,6 @@ class BookedAppointmentPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Stream<List<BookAppointmentModel>> getDates() => FirebaseFirestore.instance
-        .collection('appointment-booking')
-        .snapshots()
-        .map((snapshot) => snapshot.docs
-            .map((e) => BookAppointmentModel.fromJson(e.data()))
-            .toList());
     return Scaffold(
       appBar: AppBar(
         title: const Text('Booked Appointment'),
@@ -41,7 +35,9 @@ class BookedAppointmentPage extends StatelessWidget {
                       ),
                       subtitle: Padding(
                         padding: const EdgeInsets.only(top: 5),
-                        child: Text('Time : ${e.time}  Date : ${e.date}'),
+                        child: Text(
+                          'Time : ${e.time}  Date : ${e.date}',
+                        ),
                       ),
                     ),
                   ),

@@ -308,26 +308,15 @@ class _BookAppointmentPageState extends State<BookAppointmentPage> {
                           });
                           BookAppointmentModel appointmentModel =
                               BookAppointmentModel(
-                                  name: user,
-                                  date: dateController.text,
-                                  time: timeSlot!);
+                            name: user,
+                            date: dateController.text,
+                            time: timeSlot!,
+                          );
+
                           await bookAppointment(
-                              appointmentModel: appointmentModel);
-                          // Timer(const Duration(seconds: 2), () {
-                          //   scaffold(
-                          //     context,
-                          //     'Appointment Booked Successfully',
-                          //     Colors.green,
-                          //   );
-                          //   navigation(
-                          //     context,
-                          //     BookedAppointmentPage(
-                          //       timeSlot: timeSlot!,
-                          //       date: dateController.text,
-                          //       selectedUser: user,
-                          //     ),
-                          //   );
-                          // });
+                            appointmentModel: appointmentModel,
+                          );
+
                           Timer(const Duration(seconds: 2), () {
                             setState(() {
                               isLoading = false;
