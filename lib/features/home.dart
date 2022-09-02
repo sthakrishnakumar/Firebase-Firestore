@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:onviro/features/appointment/appointment_page.dart';
 import '../commons/export.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 120),
+        padding: const EdgeInsets.symmetric(horizontal: 100),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -44,8 +44,8 @@ class HomePage extends StatelessWidget {
               height: 10,
             ),
             ElevatedButton(
-              onPressed: () => navigation(context, const GetDates()),
-              child: const Text('Get Dates'),
+              onPressed: () => navigation(context, const AppointmentPage()),
+              child: const Text('Get Appointment'),
             ),
             const SizedBox(
               height: 10,

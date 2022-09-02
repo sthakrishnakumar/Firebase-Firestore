@@ -50,7 +50,6 @@ class _BookDatePageState extends ConsumerState<BookDatePage> {
                     child: child!,
                   );
                 },
-                
               );
 
               setState(() {
