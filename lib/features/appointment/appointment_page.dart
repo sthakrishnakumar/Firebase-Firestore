@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:onviro/commons/commons.dart';
-import 'package:onviro/features/appointment/book_appointment_page.dart';
-import 'package:onviro/features/appointment/view_booked_appointment_page.dart';
+import '../../commons/export.dart';
 
 class AppointmentPage extends StatelessWidget {
   const AppointmentPage({Key? key}) : super(key: key);

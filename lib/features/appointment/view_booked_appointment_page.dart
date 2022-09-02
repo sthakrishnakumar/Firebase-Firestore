@@ -1,6 +1,6 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:onviro/features/appointment/book_appointment_model.dart';
+
+import '../../commons/export.dart';
 
 class BookedAppointmentPage extends StatelessWidget {
   const BookedAppointmentPage({

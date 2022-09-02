@@ -1,6 +1,4 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
-import 'package:onviro/features/users/data/models/post_user_request_model.dart';
-import 'package:onviro/features/users/data/models/post_user_response_model.dart';
 
 import '../../../../commons/export.dart';
 

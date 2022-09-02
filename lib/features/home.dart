@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:onviro/features/appointment/appointment_page.dart';
 import '../commons/export.dart';
 
 class HomePage extends StatelessWidget {
@@ -12,7 +11,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 100),
+        padding: const EdgeInsets.symmetric(horizontal: 120),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

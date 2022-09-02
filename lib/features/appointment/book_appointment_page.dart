@@ -1,12 +1,8 @@
 import 'dart:async';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
-import 'package:onviro/commons/commons.dart';
-import 'package:onviro/core/app_constant.dart';
-import 'package:onviro/features/appointment/book_appointment_model.dart';
-import 'package:onviro/features/appointment/view_booked_appointment_page.dart';
+
+import '../../commons/export.dart';
 
 class BookAppointmentPage extends StatefulWidget {
   const BookAppointmentPage({Key? key}) : super(key: key);
