@@ -35,12 +35,7 @@ class GetDates extends StatelessWidget {
               child: CircularProgressIndicator(),
             );
           }
-          // if (snapshot.hasData) {
-          //   final dates = snapshot.data;
-          //   return ListView(
-          //     children: [...dates.map((e) => Text(e.bookedDate.toString()))],
-          //   );
-          // }
+          
         }),
       ),
     );
